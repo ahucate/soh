@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap SOH Plantilla</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    .icon {
+      cursor: pointer;
+    }
+
+    body {
+      background-color: #0e1318;
+    }
+
+    .main {
+      background-color: #0e1318;
+      padding-top: 32px;
+      padding-bottom: 1px;
+      border-top: 1px solid rgb(67, 77, 93);
+    }
+
+    .separator-vertical {
+      height: 30px;
+      width: 1px;
+      background-color: #404957;
+      margin: 0 10px;
+    }
+
+    .header {
+      position: fixed;
+      top: 0px;
+      left: -15px;
+      width: 110%;
+      height: 110vh;
+      background-image: url('https://images5.alphacoders.com/565/565008.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+
+      filter: brightness(0.8);
+    }
+
+    .navbar {
+      background-color: #171e27 !important;
+    }
+
+    .text-info {
+      color: #eb802b !important;
+    }
+
+    .bg-tp {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #navbarNav ul li a {
+      color: #eb802b;
+    }
+
+    #navbarNav ul li a:hover {
+      color: #f0f6fe;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .card-body {
+      background-color: #171e27 !important;
+    }
+
+
+
+    .card {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-ship"></i> Ship of <span class="text-info">Harkinian</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contributors">Contrubutors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modding">Modding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#randomizer">Randomizer</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <div class="separator-vertical"></div>
+          <i class="icon fab fa-discord me-3 fa-lg"></i>
+          <i class="icon fab fa-github fa-lg"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+  </header>
+
+  <!-- HEADER CONTENT -->
+  <div class="container vh-100 d-flex justify-content-start align-items-center" id="home" >
+    <div class="text-start bg-tp p-4">
+      <h1>Proof that the unofficial <br> option is sometimes <br> the best option</h1>
+      <h2 class="text-info">- THE VERGE</h2>
+      <div class="buttons mt-3">
+        <button class="btn btn-outline-light rounded-0">DISCUSS ON <i class="fab fa-discord me-2 fa-lg"></i></button>
+        <button class="btn btn-outline-light rounded-0">DOWNLOAD ON <i class="fab fa-github me-2 fa-lg"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+
+    <!-- CARDS -->
+    <div class="container text-center mt-5 mb-5">
+
+      <h2 class="my-2 text-info" id="features">- FEATURES -</h2>
+
+      <p>
+        Explore endless possibilities with custom enhancements, personalized music tracks, higher frame rates, and
+        an<br>
+        exciting item randomizer.
+      </p>
+
+      <div class="row mt-5 p-4">
+        <div class="col-md-4 col-12 mb-4 border-0">
+          <div class="card h-100 d-flex flex-column rounded-0 border-0">
+            <div class="card-body text-start">
+              <h5><i class="fas fa-tachometer-alt"></i> <span class="text-info ms-2">HIGHER FRAMERATE</span></h5>
+              <p class="card-text flex-grow-1">No longer constrained by 90s console hardware, your experience will now
+                be as silky smooth as your modern GPU and monitor can handle!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 mb-4">
+          <div class="card h-100 d-flex flex-column rounded-0 border-0">
+            <div class="card-body text-start">
+              <h5><i class="fas fa-paint-brush"></i> <span class="text-info ms-2">ENHANCEMENTS</span></h5>
+              <p class="card-text flex-grow-1">Make your own fun! With a plethora of enhancements and cheats available,
+                you're guaranteed to find a new way to play!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 mb-4">
+          <div class="card h-100 d-flex flex-column rounded-0 border-0">
+            <div class="card-body text-start">
+              <h5><i class="fas fa-puzzle-piece"></i> <span class="text-info ms-2">RANDOMIZER</span></h5>
+              <p class="card-text flex-grow-1">Shuffle what rewards you get from things like chests, skulltulas, and
+                more with the built-in randomizer! Endless replayability! No patching required!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- PLATFORMS -->
+      <div class="container text-center mt-5">
+        <h5 class="mb-4">AVAILABLE PLATFORMS</h5>
+        <div class="platform-icons">
+          <i class="fab fa-windows fa-xl mx-3"></i>
+          <i class="fab fa-linux fa-xl mx-3"></i>
+          <i class="fab fa-apple fa-xl mx-3"></i>
+          <i class="fab fa-solid fa-gamepad fa-xl mx-3"></i>
+          <i class="fab fa-windows fa-xl mx-3"></i>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="container my-5 border-bottom border-top">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="text-start">
+              <h2 class="mb-4 mt-4 text-info">A FAMILIAR BUT IMPROVED EXPERIENCE</h2>
+              <p>We are careful to put any and all changes to the authentic game behind toggles, so that if desired you
+                can
+                play it in all of its 1998 glory.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="screenshot_saria.jpg" alt="Descripción de la imagen" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container my-5" id="contributors">
+        <!-- Existing content -->
+
+        <!-- START THE MAIN CONTRIBUTORS SECTION -->
+
+        <h1 class="text-center mt-4 text-info my-5">
+          <font>
+            <font>Main Contributors</font>
+          </font>
+        </h1>
+
+        <div class="row featurette">
+          <div class="col-md-4">
+            <img class="rounded-circle" width="140" height="140"
+              src="https://avatars.githubusercontent.com/u/70942617?v=4" />
+            <h2 class="h4 text-info my-3">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">briaguya</font>
+              </font>
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <span
+              class="badge bg-primary-subtle border border-primary-subtle text-primary-emphasis rounded-pill">Developer</span>
+          </div><!-- /.col-md-4 -->
+          <div class="col-md-4">
+            <img class="rounded-circle" width="140" height="140"
+              src="https://avatars.githubusercontent.com/u/18299654?v=4" />
+            <h2 class="h4 text-info my-3">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Kenix3</font>
+              </font>
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <span
+              class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">Designer</span>
+          </div><!-- /.col-md-4 -->
+          <div class="col-md-4">
+            <img class="rounded-circle" width="140" height="140"
+              src="https://avatars.githubusercontent.com/u/13861068?v=4" />
+
+            <h2 class="h4 text-info my-3">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Archez</font>
+              </font>
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <span
+              class="badge bg-success-subtle border border-success-subtle text-success-emphasis rounded-pill">Project
+              Manager</span>
+          </div><!-- /.col-md-4 -->
+        </div>
+
+        <!-- END THE MAIN CONTRIBUTORS SECTION -->
+
+        <!-- Remaining existing content -->
+      </div>
+
+
+
+
+      <!-- MODDING ALBUM -->
+      <div class="album py-5" id="modding">
+        <div class="container">
+
+          <h2 class="text-center mb-4 text-info">Modding: Download FROM GameBanana</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 g-3 mt-5">
+            <!-- Tarjeta 1 -->
+            <div class="col border-less">
+              <div class="card shadow-sm border-0">
+                <img src="https://images.gamebanana.com/img/ss/mods/654a750666294.jpg"
+                  class="bd-placeholder-img card-img-top img-fluid" alt="Malon Image"
+                  style="object-fit: cover; height: 250px; width: 100%;">
+                <div class="card-body">
+                  <h3 class="text-info text-start">Dijipi's 3DS Texture Pack!</h3>
+                  <p class="card-text text-start">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore obcaecati eligendi recusandae
+                    laudantium
+                    iste reprehenderit suscipit aut est iusto sapiente inventore itaque amet totam adipisci, quas a
+                    aspernatur
+                    architecto praesentium.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="enlace_del_mod" class="btn btn-link">Get the Mod...</a>
+                    <small class="text-body-secondary">40 minutes</small>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA -->
+
+            <!-- Tarjeta -->
+            <div class="col border-less">
+              <div class="card shadow-sm border-0">
+                <img
+                  src="https://images-ext-1.discordapp.net/external/XFyDqfbA_EHfdi50gsPfRcGfBb7Wv39e4YmCD6orqTk/%3Fvariant%3Dsd_image/https/gamebanana.com/mods/embeddables/476703?width=797&height=448"
+                  class="bd-placeholder-img card-img-top img-fluid" alt="Malon Image"
+                  style="object-fit: cover; height: 250px; width: 100%;">
+                <div class="card-body">
+                  <h3 class="text-info text-start">Malon Rose</h3>
+                  <p class="card-text text-start">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore obcaecati eligendi recusandae
+                    laudantium
+                    iste reprehenderit suscipit aut est iusto sapiente inventore itaque amet totam adipisci, quas a
+                    aspernatur
+                    architecto praesentium.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="enlace_del_mod" class="btn btn-link">Get the Mod...</a>
+                    <small class="text-body-secondary">1 day</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA -->
+
+            <!-- Tarjeta -->
+            <div class="col border-less">
+              <div class="card shadow-sm border-0">
+                <img
+                  src="https://images-ext-2.discordapp.net/external/ZuuTwmBryB0ZM0carWzIONH9t9uTvKduaT5oBwR6lLI/%3Fvariant%3Dsd_image/https/gamebanana.com/mods/embeddables/477383?width=799&height=449"
+                  class="bd-placeholder-img card-img-top img-fluid" alt="Malon Image"
+                  style="object-fit: cover; height: 250px; width: 100%;">
+                <div class="card-body">
+                  <h3 class="text-info text-start">Fierce Deity</h3>
+
+                  <p class="card-text text-start">
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore obcaecati eligendi recusandae
+                    laudantium
+                    iste reprehenderit suscipit aut est iusto sapiente inventore itaque amet totam adipisci, quas a
+                    aspernatur
+                    architecto praesentium.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="enlace_del_mod" class="btn btn-link">Get the Mod...</a>
+                    <small class="text-body-secondary">last week</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA -->
+
+            <!-- Tarjeta -->
+            <div class="col border-less">
+              <div class="card shadow-sm border-0">
+                <img src="https://images.gamebanana.com/img/ss/mods/653ef9af5232f.jpg"
+                  class="bd-placeholder-img card-img-top img-fluid" alt="Malon Image"
+                  style="object-fit: cover; height: 250px; width: 100%;">
+                <div class="card-body">
+                  <h3 class="text-info text-start">Gregforce (Triforce Hunt Mod)</h3>
+
+                  <p class="card-text text-start">
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore obcaecati eligendi recusandae
+                    laudantium
+                    iste reprehenderit suscipit aut est iusto sapiente inventore itaque amet totam adipisci, quas a
+                    aspernatur
+                    architecto praesentium.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="enlace_del_mod" class="btn btn-link">Get the Mod...</a>
+                    <small class="text-body-secondary">1 mouth</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TARJETA -->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Improved Experience Section with Video -->
+      <div class="container my-5 vh-50">
+        <div class="row h-100 py-5">
+          <!-- Texto a la Izquierda -->
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="text-start">
+              <h2 class="mb-4 mt-4 text-info">This Is the Best HD Texture Pack for Zelda Ocarina Of Time PC Port</h2>
+              <p>
+                Play it in all of its 1998 glory. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                porro deleniti facere similique consequatur obcaecati eos atque! Incidunt, quidem fugiat. Cupiditate
+                veritatis aliquid repudiandae accusamus doloremque hic impedit alias possimus.</p>
+              <button class="btn btn-link" type="button">Get the Texture pack...</button>
+
+            </div>
+          </div>
+          <!-- Video a la Derecha -->
+          <div class="col-lg-6 text-center" style="min-height: 300px;">
+            <div class="embed-responsive embed-responsive-16by9 h-100">
+              <iframe class="embed-responsive-item w-100 h-100"
+                src="https://www.youtube.com/embed/HgPgGnuub8k?autoplay=1" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RANDOMIZER -->
+      <div class="container text-center mt-5" id="randomizer">
+        <h1 class="mt-4 mb-4 text-info">Randomizer</h1>
+
+        <div class="instruction-section text-start card-body px-4 py-4 mb-5 mt-5">
+          <h5 class="text-info">How to play randomizer</h5>
+          <ol>
+            <li>Go to the file select screen</li>
+            <li>Open the "Randomizer Settings" menu through the F1 menu under "Randomizer".</li>
+            <li>Set desired settings in the same window</li>
+            <li>Hit the "Generate Seed" button</li>
+            <li>You will see several item icons at the top of your screen on the file select menu as well as hear a
+              jingle indicating that it worked properly.</li>
+            <li>Create a new save file, and choose "randomizer" in the quest select screen. Your new savefile should
+              have a label "RAND" next to it.</li>
+            <li>Play the randomizer!</li>
+          </ol>
+        </div>
+
+        <div class="instruction-section text-start card-body px-4 py-4 mb-5">
+          <h5 class="text-info">How to share seeds or start a new save with an existing seed</h5>
+          <ol>
+            <li>Go to the file select screen</li>
+            <li>Locate your desired seed in the Randomizer folder.</li>
+            <li>If sharing a seed, send the other person this JSON file.</li>
+            <li>Drag and drop the JSON file of the desired seed onto the game window.</li>
+            <li>You will see several item icons at the top of your screen on the file select menu as well as hear a
+              jingle indicating that it worked properly.</li>
+            <li>Create a new save file, and choose "randomizer" in the quest select screen. Your new savefile should
+              have a label "RAND" next to it.</li>
+            <li>Play the randomizer!</li>
+          </ol>
+        </div>
+
+        <div class="instruction-section text-start card-body px-4 py-4 mb-5">
+          <h5 class="text-info">How to go back to playing vanilla</h5>
+          <ol>
+            <li>Create a new savefile. If the game asks you to choose between multiple game modes during save creation,
+              pick the one without "randomizer" in the logo. Your new savefile should have either no tag next to it, or
+              the "MQ" tag.</li>
+            <li>Play the game!</li>
+          </ol>
+        </div>
+
+      </div>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4 text-info">Contact Us</h2>
+
+        <!-- Row para dividir en dos columnas -->
+        <div class="row">
+          <!-- Columna para la imagen -->
+          <div class="col-md-6 mb-4 mt-4">
+            <img src="https://img.nsctotal.com.br/wp-content/uploads/2023/11/link-epona-zelda-ocarina-of-time.jpg"
+              class="img-fluid" alt="Imagen de contacto">
+          </div>
+
+          <!-- Columna para el formulario -->
+          <div class="col-md-6">
+            <!-- Formulario de Contacto -->
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-start">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+              <div class="text-start">
+                <button type="submit" class="btn btn-light">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <style>
+        /* Estilo personalizado para alinear los labels a la izquierda */
+        form label {
+          text-align: left;
+          display: block;
+          /* Asegura que cada label ocupe una línea completa */
+        }
+      </style>
+
+      <!-- DIRECT -->
+      <div class="container text-center my-5">
+        <h2 class="my-5 text-info">Watch our Latest Direct</h2>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/HrA4fOHXUFU"></iframe>
+        </div>
+      </div>
+
+      <div class="container my-5 text-center">
+        <img src="https://github.com/HarbourMasters/Shipwright/blob/develop/docs/shiptitle.darkmode.png?raw=true"
+          alt="Shipwright Logo" class="img-fluid" style="max-width: 300px;">
+      </div>
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <div class="container pt-3">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© </span>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              Harbour Masters
+            </a>
+
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#">
+                <i class="fab fa-discord"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+
+
+
+
+      <!-- Scripts de Bootstrap y Font Awesome -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+      <script src="parallax.js"></script>
+</body>
+
+</html>
